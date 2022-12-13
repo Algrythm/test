@@ -1,0 +1,171 @@
+$(document).ready(function() {
+	loadToolTips();
+
+});	
+function loadToolTips() {
+	var position =  {
+		my: "bottom center",
+		at: "top center"
+	}
+	var style = {
+		tip: {
+			corner: 'bottomMiddle'
+		}
+	}
+	var style2 = {
+		tip: {
+			corner: 'topMiddle'
+		}
+	}
+	var style_old = {
+		background: '#FFFEE7',
+		color: '#1A1A1A',
+		fontSize: 14,
+		textAlign: 'center',
+		padding: 5,
+		border: {
+			radius: 2,
+			color: '#E7C60D'
+		},
+		tip: {
+			corner: 'bottomMiddle'
+		}
+	}
+	var style2_old = {
+		background: '#FFFEE7',
+		color: '#1A1A1A',
+		fontSize: 14,
+		textAlign: 'center',
+		padding: 5,
+		border: {
+			radius: 2,
+			color: '#E7C60D'
+		},
+		tip: {
+			corner: 'topMiddle'
+		}
+	}
+	$('.feed-info').qtip({
+		content: 'Additional Feed Information and Archives',
+		position: position,
+		style: style,
+		show: {
+			event: "mouseover"
+		},
+		hide: {
+			event: "mouseout"
+		}
+	});
+	$('.feed-link').qtip({
+		content: 'Feed Broadcaster Web Link',
+		position: position,
+		style: style,
+		show: {
+			event: "mouseover"
+		},
+		hide: {
+			event: "mouseout"
+		}
+	});
+	$('.own-feed').qtip({
+		content: 'Manage Feed',
+		position: position,
+		style: style,
+		show: {
+			event: "mouseover"
+		},
+		hide: {
+			event: "mouseout"
+		}
+	});
+	$('.admin-feed').qtip({
+		content: 'Admin Feed',
+		position: position,
+		style: style,
+		show: {
+			event: "mouseover"
+		},
+		hide: {
+			event: "mouseout"
+		}
+	});
+	$('.tagsAvail').qtip({
+		content: 'Alpha tags available in this broadcast',
+		position: position,
+		style: style,
+		show: {
+			event: "mouseover"
+		},
+		hide: {
+			event: "mouseout"
+		}
+	});
+	$('.blueStar').qtip({
+		content: 'Feed owned and managed by Broadcastify',
+		position: position,
+		style: style,
+		show: {
+			event: "mouseover"
+		},
+		hide: {
+			event: "mouseout"
+		}
+	});
+	$('.redStar').qtip({
+		content: 'Official feed broadcasted by the agency',
+		position: position,
+		style: style,
+		show: {
+			event: "mouseover"
+		},
+		hide: {
+			event: "mouseout"
+		}
+	});
+	$('.button-play').qtip({
+		content: 'Click to start the player',
+		position: position,
+		style: style,
+		show: {
+			event: "mouseover"
+		},
+		hide: {
+			event: "mouseout"
+		}
+	});
+	$('.premium').qtip({
+		content: 'Premium Subscriber',
+		position: {
+			my: "top center",
+			at: "bottom center"
+		},
+		style: style2,
+		show: {
+			event: "mouseover"
+		},
+		hide: {
+			event: "mouseout"
+		}
+	});
+	$('.myAccount').qtip({
+		content: '<b><a class="hdFontAlt" href="/account">Edit my profile</a></b><br /><br /><b><a class="hdFontAlt" href="/account/?action=logout">Logout</a></b>',
+		position: {
+			my: "top center",
+			at: "bottom center"
+		},
+		style: {
+			tip: {
+				corner: 'topMiddle'
+			},
+			width: 200,
+			height: 100
+		},
+		show: {
+			event: "mouseover"
+		},
+		hide: {
+			delay: 200,
+			fixed: true
+		}
+	});
+}

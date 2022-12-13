@@ -1,0 +1,734 @@
+BODY {
+	background-color: #ECECEC;
+	font-family: "proxima-nova-soft";
+}
+IMG {
+	border-width: 0px;
+}
+SELECT {
+	font-family: "Trebuchet MS";
+	font-size: 13px;
+	color: #606060;
+}
+H1 {
+	font-family: "proxima-nova-soft";
+	font-size: 18px;
+	color: #1A1A1A;
+	font-weight: bold;
+}
+H2 {
+	font-family: "proxima-nova-soft";
+	font-size: 20px;
+	color: #1A1A1A;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #CCCCCC;
+	font-weight: normal;
+}
+H2 .red {
+	font-family: "proxima-nova-soft";
+	font-size: 20px;
+	font-weight: bold;
+	color: #CF1E23;
+	text-transform: uppercase;
+}
+H3 {
+	font-family: "proxima-nova-soft";
+	font-size: 16px;
+	color: #1A1A1A;
+	font-weight: bold;
+}
+.bodyCopy {
+	font-family: "Trebuchet MS";
+	font-size: 12px;
+	line-height: 16px;
+	color: #808080;
+}
+
+.bodyCopy a {
+	font-family: "Trebuchet MS";
+	font-size: 12px;
+	line-height: 16px;
+	color: #808080;
+}
+.pageTitleNormal {
+	font-family: "proxima-nova-soft";
+	font-size: 20px;
+	color: #1A1A1A;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #CCCCCC;
+}
+.pageTitleRed {
+	font-family: "proxima-nova-soft";
+	font-size: 20px;
+	font-weight: bold;
+	color: #CF1E23;
+	text-transform: uppercase;
+}
+
+/* BCFY Table */
+
+.btable {
+	border-collapse: collapse;
+}
+
+.btable td {
+	padding: 10px;
+	border: 1px solid #B3B3B3;
+	font-family: "Trebuchet MS";
+	font-size: 9pt;
+	line-height: 16px;
+	color: #606060;
+	background-image:url('https://s.broadcastify.com/i/td-gradient3.png'); 
+	background-repeat:repeat-x;
+}
+.btable td.online {
+	font-family: "proxima-nova-soft";
+	font-size: 10pt;
+	color: #FFFFFF;
+	text-shadow: -1px -1px #333333;
+	background: #86B900;
+	text-align: center;
+}
+.btable td.offline {
+	font-family: "proxima-nova-soft";
+	font-size: 10pt;
+	color: #FFFFFF;
+	text-shadow: -1px -1px #333333;
+	background: #EB2600;
+	text-align: center;
+}
+.btable td a {
+	font-family: "Trebuchet MS";
+	font-size: 10pt;
+	color: #CF1E23;
+	text-decoration: none;
+}
+
+.btable td a:visited {
+	font-family: "Trebuchet MS";
+	font-size: 10pt;
+	color: #CF1E23;
+	text-decoration: none;
+}
+
+.btable td a:hover {
+	font-family: "Trebuchet MS";
+	font-size: 10pt;
+	color: #CF1E23;
+	text-decoration: underline;
+}
+
+.btable th {
+	padding: 5px;
+	font-family: "Trebuchet MS";
+	font-size: 12px;
+	color: #CCCCCC;
+	text-align: left;
+	white-space:nowrap;
+	background-image:url('https://s.broadcastify.com/i/table-header-span.png'); 
+	background-repeat:repeat-x;
+}
+
+.btable th a {
+	font-size: 12px;
+	font-family: "Trebuchet MS";
+	color: #CCCCCC;
+	text-decoration: none;
+	text-align: left;
+}
+
+.btable th a:visited {
+	font-size: 12px;
+	font-family: "Trebuchet MS";
+	color: #CCCCCC;
+	text-decoration: none;
+	text-align: left;
+}
+
+.btable th a:hover {
+	font-size: 12px;
+	font-family: "Trebuchet MS";
+	color: #CCCCCC;
+	text-decoration: underline;
+	text-align: left;
+}
+.btable th.vertical {
+	padding: 5px;
+	font-family: "Trebuchet MS";
+	border: 1px solid #B3B3B3;
+	font-size: 13px;
+	font-weight: bold;
+	color: #175B8D;
+	text-align: left;
+	white-space:nowrap;
+	background-image:url('https://s.broadcastify.com/i/td-gradient3.png'); 
+}
+
+.btable th.vertical a {
+	font-size: 12px;
+	font-family: "Trebuchet MS";
+	color: #CCCCCC;
+	text-decoration: none;
+	text-align: left;
+}
+
+.btable th.vertical a:visited {
+	font-size: 12px;
+	font-family: "Trebuchet MS";
+	color: #CCCCCC;
+	text-decoration: none;
+	text-align: left;
+}
+
+.btable th.vertical a:hover {
+	font-size: 12px;
+	font-family: "Trebuchet MS";
+	color: #CCCCCC;
+	text-decoration: underline;
+	text-align: left;
+}
+
+/* End Table */
+
+#bcfypage {
+  width: 975px ;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+#unav {
+  width: 975px ;
+  height: 35px ;
+  margin-left: 25px;
+  margin-right: 25px;
+  }
+.unavImg {
+	padding-right: 5px;
+}
+.unavContent {
+	padding-right: 20px;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+#header {
+	width: 975px;
+	height: 105px;
+	background-color: #FFFFFF;
+	background-image: url("https://s.broadcastify.com/i/logo-header.jpg");
+	background-repeat: no-repeat;
+}
+
+.hdFont {
+	font-family: "proxima-nova-soft";
+	font-size: 13px;
+	color: #808080; line-height: 20px; 
+	text-decoration: none;
+}
+.hdFont a { font-size: 16px; color: #808080; text-shadow: 1px 1px #FFF; }
+.hdFontAlt { font-family: "proxima-nova-soft"; font-size: 13px; color: #68B5D6; }
+.hdFontAlt a { font-family: "proxima-nova-soft"; font-size: 13px; color: #68B5D6; }
+
+.menu-3rdlevel-span,.icon-bullet,.icon-blogger-blue,.icon-blogger-grey,.icon-fb-blue,.icon-fb-grey,.icon-twitter-blue,.icon-twitter-grey,.icon-currentlistener,.icon-livefeeds,.icon-topfeed,.menu-indicator-arrow,.button-login,.button-login-hover,.button-signup,.button-signup-hover,.button-menu-home-hover,.button-menu-home,.button-menu-premium-hover,.button-menu-premium,.button-menu-broadcast-hover,.button-menu-broadcast,.button-menu-listen-hover,.button-menu-listen,.menu-dropdown-bottom,.menu-dropdown-span,.menu-dropdown-top,.button-menu-broadcast-hl,.button-menu-listen-hl,.table-header-span,.button-primary-left,.button-primary-right,.button-primary-span,.button-secondary-left,.button-secondary-right,.button-secondary-span,.audio-player-header-span{display: inline-block;background-repeat: no-repeat;background-image: url('https://s.broadcastify.com/i/globalButtons004.png');}
+.menu-3rdlevel-span{background-position:0px 0px;width:4px;height:32px;}
+.icon-bullet{background-position:-4px 0px;width:6px;height:8px;}
+.icon-blogger-blue{background-position:-10px 0px;width:23px;height:23px;}
+.icon-blogger-grey{background-position:-33px 0px;width:23px;height:23px;}
+.icon-fb-blue{background-position:-56px 0px;width:23px;height:23px;}
+.icon-fb-grey{background-position:-79px 0px;width:23px;height:23px;}
+.icon-twitter-blue{background-position:-102px 0px;width:23px;height:23px;}
+.icon-twitter-grey{background-position:-125px 0px;width:23px;height:23px;}
+.icon-currentlistener{background-position:-148px 0px;width:25px;height:26px;}
+.icon-livefeeds{background-position:-173px 0px;width:25px;height:26px;}
+.icon-topfeed{background-position:-198px 0px;width:25px;height:26px;}
+.menu-indicator-arrow{background-position:0px -32px;width:30px;height:12px;}
+.button-login{background-position:-30px -32px;width:74px;height:26px;}
+.button-login:hover{background-position:-104px -32px;width:74px;height:26px;}
+.button-signup{background-position:0px -58px;width:82px;height:26px;}
+.button-signup:hover{background-position:-82px -58px;width:82px;height:26px;}
+.button-menu-home:hover{background-position:0px -84px;width:106px;height:33px;}
+.button-menu-home-hover{background-position:0px -84px;width:106px;height:33px;}
+.button-menu-home{background-position:-106px -84px;width:106px;height:33px;}
+.button-menu-premium:hover{background-position:0px -117px;width:106px;height:33px;}
+.button-menu-premium-hover{background-position:0px -117px;width:106px;height:33px;}
+.button-menu-premium{background-position:-106px -117px;width:106px;height:33px;}
+.button-menu-broadcast:hover{background-position:0px -150px;width:120px;height:33px;}
+.button-menu-broadcast-hover{background-position:0px -150px;width:120px;height:33px;}
+.button-menu-broadcast{background-position:-120px -150px;width:120px;height:33px;}
+.button-menu-listen:hover{background-position:0px -183px;width:120px;height:33px;}
+.button-menu-listen-hover{background-position:0px -183px;width:120px;height:33px;}
+.button-menu-listen{background-position:-120px -183px;width:120px;height:33px;}
+.menu-dropdown-bottom{background-position:0px -216px;width:140px;height:7px;}
+.menu-dropdown-top{position: absolute; background-position:0px -226px;width:140px;height:7px;}
+.button-menu-broadcast-hl{background-position:0px -233px;width:120px;height:33px;}
+.button-menu-broadcast-hl:hover{background-position:0px -150px;width:120px;height:33px;}
+.button-menu-listen-hl{background-position:-120px -233px;width:120px;height:33px;}
+.button-menu-listen-hl:hover{background-position:0px -183px;width:120px;height:33px;}
+.table-header-span{background-position:-240px -233px;width:2px;height:24px;}
+.button-primary-left{background-position:-242px -233px;width:7px;height:33px;}
+.button-primary-right{background-position:0px -266px;width:7px;height:33px;}
+.button-primary-span{background-position:-7px -266px;width:5px;height:33px;}
+.button-secondary-left{background-position:-12px -266px;width:8px;height:35px;}
+.button-secondary-right{background-position:-20px -266px;width:8px;height:35px;}
+.button-secondary-span{background-position:-28px -266px;width:3px;height:35px;}
+.audio-player-header-span{background-position:-31px -266px;width:3px;height:31px;}
+
+.menu-dropdown-span{
+	background-image:url('https://s.broadcastify.com/i/menu-dropdown-span.png'); 
+	background-repeat:repeat-y;
+	padding: 10px;
+	margin: 0;
+	width: 140px;
+}
+.menu-dropdown-span a {
+	font-family: "proxima-nova-soft";
+	font-size: 16px;
+	color: #B3B3B3;
+	text-decoration: none;
+}
+.menu-dropdown-span a:hover {
+	color: #FFCB27;
+}
+.dropMenu {
+	position: relative; 
+	top: -5px; 
+	left: -64x; 
+	display: none;
+}
+#headerSpacer { width: 975px;
+	height: 14px;
+	background-image: url("https://s.broadcastify.com/i/ui-blue.jpg");
+	background-repeat: no-repeat;
+}
+
+#hero {
+	width: 975px;
+	height: 280px;
+	background-image: url("https://s.broadcastify.com/i/hero-1.jpg");
+	background-repeat: no-repeat;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Middle Boxes on the Home Page */
+.button-broadcast-hover,.button-broadcast,.button-connect-hover,.button-connect,.button-listen-hover,.button-listen{display: inline-block;background-repeat: no-repeat;background-image: url('https://s.broadcastify.com/i/homeCenterButtons001.png');}
+.button-listen {
+	display: inline-block;
+	width: 325px;
+	height: 128px;
+	margin: -1px 0px 0px 0px;
+	padding: 0px;
+	float: left;
+	background-position:0px -640px;width:325px;height:128px;
+}
+.button-listen:hover {
+	background-position:0px -512px;width:325px;height:128px;
+}
+.button-broadcast {
+	display: inline-block;
+	width: 325px;
+	height: 128px;
+	margin: -1px 0px 0px 0px;
+	padding: 0px;
+	float: left;
+	background-position:0px -128px;width:325px;height:128px;
+}
+.button-broadcast:hover {
+	background-position:0px 0px;width:325px;height:128px;
+}
+.button-connect {
+	display: inline-block;
+	width: 325px;
+	height: 128px;
+	margin: -1px 0px 0px 0px;
+	padding: 0px;
+	float: left;
+	background-position:0px -384px;width:325px;height:128px;
+}
+.button-connect:hover {
+	background-position:0px -256px;width:325px;height:128px;
+}
+.midspan {
+	position: relative;
+	left: 70px;
+	top: 70px;
+	font-family: "Trebuchet MS", verdana;
+	font-size: 14px;
+	color: #AAAAAA;
+}
+.homeBottom {
+	border:1px solid #CCCCCC;
+	background-color: #FFFFFF;
+	vertical-align: top;
+}
+.homeBottomLR {
+	width: 300px;
+	vertical-align: top;
+}
+.homeBottomC {
+	width: 375px;
+	vertical-align: top;
+}
+
+/* Subheader */
+.subHeadListen {
+	display: block;
+	margin: -1px 0px 0px 0px;
+	width: 975px;
+	height: 67px;
+	background-image:url('https://s.broadcastify.com/i/subhead-listen.jpg'); 
+}
+.subHeadContent {
+	vertical-align: middle;
+	white-space: nowrap;
+	font-size: 16px;
+	color: #FFFFFF;
+	padding-left: 20px;
+	padding-right: 10px;
+}
+.subHeadContentc {
+	vertical-align: middle;
+	white-space: nowrap;
+	font-size: 16px;
+	color: #FFCB27;
+	padding-left: 20px;
+	padding-right: 10px;
+}
+.subHeadContent a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.subHeadContentc a {
+	text-decoration: none;
+	color: #FFCB27;
+}
+.subHeadContent a:hover {
+	text-decoration: none;
+	color: #FFCB27;
+}
+.subNav {
+	display: block;
+	width: 975px;
+	height: 30px;
+	background-image:url('https://s.broadcastify.com/i/menu-3rdlevel-span.png'); 
+	background-repeat:repeat-x;
+}
+
+.subNavContent {
+	vertical-align: middle;
+	white-space: nowrap;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-shadow: -1px -1px #333333;
+	padding-left: 30px;
+	padding-right: 15px;
+}
+.subNavContentc {
+	vertical-align: middle;
+	white-space: nowrap;
+	font-size: 14px;
+	color: #FFCB27;
+	text-shadow: -1px -1px #333333;
+	padding-left: 30px;
+	padding-right: 15px;
+}
+.subNavContentLabel {
+	vertical-align: middle;
+	white-space: nowrap;
+	font-size: 12px;
+	color: #BBBBBB;
+	padding-left: 30px;
+}
+.subNavContent a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.subNavContentc a {
+	text-decoration: none;
+	color: #FFCB27;
+}
+.subNavContent a:hover {
+	text-decoration: none;
+	color: #FFCB27;
+}
+.subNavArrow {
+	position: relative;
+	top: -42px;
+	left: 330px;
+	display: inline-block;
+}
+
+.subHeadBg {
+	display: block;
+	width: 975px;
+	height: 70px;
+	background-image:url('https://s.broadcastify.com/i/subhead-background4.png'); 
+	background-repeat: no-repeat;
+	padding-left: 30px;
+}
+/* Listen Buttons */
+/*
+.audio-player-header-span,.blueStar,.button-feed-hover,.button-feed,.button-info-hover,.button-info,.EditButton,.greenStar,.own,.redStar,.button-play-hover,.button-play,.icon2-add-hover,.icon2-add,.icon2-feed-archives-hover,.icon2-feed-archives,.icon2-feed-details-hover,.icon2-feed-details,.icon2-report-hover,.icon2-report,.icon2-contact-hover,.icon2-contact,.retrieve,.search,.button-upgrade-now,.button-launch-player-hover,.button-launch-player{display: inline-block;background-repeat: no-repeat;background-image: url('https://s.broadcastify.com/i/listenButtons.png');}
+.audio-player-header-span{background-position:0px 0px;width:3px;height:31px;}
+.blueStar{background-position:-3px 0px;width:16px;height:16px;}
+.button-feed:hover{background-position:-19px 0px;width:16px;height:16px;}
+.button-feed{background-position:-35px 0px;width:16px;height:16px;}
+.button-info:hover{background-position:-51px 0px;width:16px;height:16px;}
+.button-info{background-position:-67px 0px;width:16px;height:16px;}
+.EditButton{background-position:-83px 0px;width:16px;height:16px;}
+.greenStarFeed{background-position:-99px 0px;width:16px;height:16px;}
+.greenStarPremium{background-position:-99px 0px;width:16px;height:16px;}
+.own{background-position:-115px 0px;width:16px;height:16px;}
+.redStar{background-position:-131px 0px;width:16px;height:16px;}
+.button-play:hover{background-position:-147px 0px;width:22px;height:22px;}
+.button-play{background-position:-169px 0px;width:22px;height:22px;}
+.icon2-add:hover{background-position:-191px 0px;width:54px;height:81px;}
+.icon2-add{background-position:-245px 0px;width:54px;height:81px;}
+.icon2-feed-archives:hover{background-position:0px -81px;width:56px;height:81px;}
+.icon2-feed-archives{background-position:-56px -81px;width:56px;height:81px;}
+.icon2-feed-details:hover{background-position:-112px -81px;width:65px;height:81px;}
+.icon2-feed-details{background-position:-177px -81px;width:65px;height:81px;}
+.icon2-report:hover{background-position:0px -162px;width:66px;height:81px;}
+.icon2-report{background-position:-66px -162px;width:66px;height:81px;}
+.icon2-contact:hover{background-position:-132px -162px;width:70px;height:81px;}
+.icon2-contact{background-position:-202px -162px;width:70px;height:81px;}
+.retrieve{background-position:0px -243px;width:109px;height:37px;}
+.search{background-position:-109px -243px;width:109px;height:38px;}
+.button-upgrade-now{background-position:0px -281px;width:220px;height:35px;}
+.button-launch-player:hover{background-position:0px -316px;width:304px;height:62px;}
+.button-launch-player{background-position:0px -378px;width:304px;height:62px;}
+*/
+.audio-player-header-span,.blueStar,.button-feed-hover,.button-feed,.button-info-hover,.button-info,.EditButton,.greenStar,.own,.redStar,.button-play-hover,.button-play,.icon2-feed-archives-hover,.icon2-feed-archives,.icon2-feed-details-hover,.icon2-feed-details,.icon2-report-hover,.icon2-report,.icon2-contact-hover,.icon2-contact,.retrieve,.search,.button-upgrade-now,.button-launch-player-hover,.button-launch-player,.icon2-addmybcfy-hover,.icon2-addmybcfy,.icon2-admin-hover,.icon2-admin,.icon2-manage-hover,.icon2-manage{display: inline-block;background-repeat: no-repeat;background-image: url('https://s.broadcastify.com/i/listenButtons002.png');}
+.audio-player-header-span{background-position:0px 0px;width:3px;height:31px;}
+.blueStar{background-position:-3px 0px;width:16px;height:16px;}
+.button-feed:hover{background-position:-19px 0px;width:16px;height:16px;}
+.button-feed{background-position:-35px 0px;width:16px;height:16px;}
+.button-info:hover{background-position:-51px 0px;width:16px;height:16px;}
+.button-info{background-position:-67px 0px;width:16px;height:16px;}
+.EditButton{background-position:-83px 0px;width:16px;height:16px;}
+.greenStar{background-position:-99px 0px;width:16px;height:16px;}
+.own{background-position:-115px 0px;width:16px;height:16px;}
+.redStar{background-position:-131px 0px;width:16px;height:16px;}
+.button-play:hover{background-position:-147px 0px;width:22px;height:22px;}
+.button-play{background-position:-169px 0px;width:22px;height:22px;}
+.icon2-feed-archives:hover{background-position:-191px 0px;width:56px;height:81px;}
+.icon2-feed-archives{background-position:-247px 0px;width:56px;height:81px;}
+.icon2-feed-details:hover{background-position:-303px 0px;width:65px;height:81px;}
+.icon2-feed-details{background-position:-368px 0px;width:65px;height:81px;}
+.icon2-report:hover{background-position:0px -81px;width:66px;height:81px;}
+.icon2-report{background-position:-66px -81px;width:66px;height:81px;}
+.icon2-contact:hover{background-position:-132px -81px;width:70px;height:81px;}
+.icon2-contact{background-position:-202px -81px;width:70px;height:81px;}
+.retrieve{background-position:-272px -81px;width:109px;height:37px;}
+.search{background-position:-381px -81px;width:109px;height:38px;}
+.button-upgrade-now{background-position:0px -162px;width:220px;height:35px;}
+.button-launch-player:hover{background-position:0px -197px;width:304px;height:62px;}
+.button-launch-player{background-position:0px -259px;width:304px;height:62px;}
+.icon2-addmybcfy:hover{background-position:-304px -259px;width:54px;height:81px;}
+.icon2-addmybcfy{background-position:-358px -259px;width:54px;height:81px;}
+.icon2-admin:hover{background-position:-412px -259px;width:58px;height:81px;}
+.icon2-admin{background-position:0px -340px;width:58px;height:81px;}
+.icon2-manage:hover{background-position:-58px -340px;width:61px;height:81px;}
+.icon2-manage{background-position:-119px -340px;width:61px;height:81px;}
+/* Page Content */
+.contentBox {
+	margin: -1px 0px 0px 0px;
+	border-left: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	background-color: #FFFFFF;
+	vertical-align: top;
+	padding: 0px 25px 25px 25px;
+	font-size: 14px;
+}
+.contentBox a {
+	text-decoration: none;
+	color: #CF1E23;
+}
+
+/* Web Player Styles */
+#bcfyplayer {
+  width: 710px ;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+
+.webPlayerHero {
+	width: 710px;
+	height: 77px;
+	background-image: url("https://s.broadcastify.com/i/header-audio-player.png");
+	background-repeat: no-repeat;
+}
+.webPlayerHeader {
+	display: block;
+	width: 710px;
+	height: 72px;
+	background-image:url('https://s.broadcastify.com/i/subhead-wp-background1.png'); 
+	background-repeat: no-repeat;
+	padding-left: 30px;
+}
+.playerContentBox {
+	margin: -3px 0px 0px 0px;
+	border-left: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	background-color: #FFFFFF;
+	vertical-align: top;
+	padding: 0px 25px 25px 25px;
+	font-size: 14px;
+}
+.playerContentBox a {
+	text-decoration: none;
+	color: #CF1E23;
+}
+.feedStatusBar {
+	background-image:url('https://s.broadcastify.com/i/audio-player-header-span.png'); 
+	background-repeat:repeat-x;
+	width: 299px;
+	height: 30px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	color: #FFFFFF;
+	font-family: "Trebuchet MS";
+	font-size: 13px;
+}
+.feedStatusBar .online {
+	color: #39B54A;
+}
+.feedStatusBar .offline {
+	color: #EB2600;
+}
+.feedStatusBar .listeners {
+	color: #68B5D6;
+}
+.feedStatusBar .na {
+	color: #CCCCCC;
+}
+
+
+/* Footer and End of Page CSS */
+#footer {
+	display: block;
+	width: 975px;
+	height: 40px;
+	background-color: #808080;
+}
+.footerContent {
+	padding-right: 20px;
+	vertical-align: middle;
+	white-space: nowrap;
+	font-size: 14px;
+	color: #FFFFFF;
+	padding-left: 30px;
+	padding-right: 15px;
+}
+.footerContent a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.footerContent a:hover {
+	color: #EEEEEE;
+	text-decoration: underline;
+}
+
+.gutter25 {
+	display: inline-block;
+	width: 975px;
+	height: 25px;
+}
+
+.il {
+	display: inline;
+}
+.m {
+	vertical-align: middle;
+}
+.c {
+	text-align: center;
+}
+.w100 {
+	width: 100%;
+}
+.invgut {
+	width: 25px;
+}
+
+.layout {
+	border-collapse: collapse;
+	margin: 0px;
+	padding: 0px;
+	height: 100%
+}
+.layout td.border {
+	border: 1px solid #CCCCCC; 
+	padding: 10px;
+	vertical-align: top;
+}
+
+.textSugg {
+	color: #808080;
+}
+.messageBox {
+	padding: 20px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border:1px solid #E7C60D;
+	background-color: #FFFEE7;
+	font-family: "proxima-nova-soft";
+	font-size: 15px;
+	color: #1A1A1A;
+	text-align: center;
+}
+.messageBox .title {
+	font-family: "proxima-nova-soft";
+	font-size: 18px;
+	color: #CF1E23;
+}
+.messageBoxWhite {
+	padding: 20px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border:1px solid #CCCCCC;
+	background-color: #FFFFFF;
+	font-family: "proxima-nova-soft";
+	font-size: 15px;
+	color: #1A1A1A;
+	text-align: center;
+}
+.messageBoxWhite .title {
+	font-family: "proxima-nova-soft";
+	font-size: 18px;
+	color: #CF1E23;
+}
+
+.filterHeader {
+	font-family: "proxima-nova-soft";
+	font-size: 18px;
+	color: #1A1A1A;
+}
+
+.bcfy_button {
+    padding: 6px;
+    background-color: #808080;
+    color: #FFFFFF;
+    font-size: 13px;
+}
+
+.lockedButton {
+    display: inline-block;
+    background-image: url('https://s.broadcastify.com/i/Locked.gif');
+    background-repeat: no-repeat;
+    width:16px;
+    height:16px;
+}
+.personButton {
+    display: inline-block;
+    background-image: url('https://s.broadcastify.com/i/Person.gif');
+    background-repeat: no-repeat;
+    width:16px;
+    height:16px;
+}
+

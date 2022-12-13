@@ -1,0 +1,104 @@
+//
+// This is Javascript that we run at the end of each page
+//
+function clearDefault(el) {
+	if (el.defaultValue==el.value) el.value = "";
+	if (el.className) el.className = "";
+}
+function LaunchWindow(page,id,actions) {
+	OpenWin = this.open(page,id,actions);
+}
+
+function confirmAction(url, message) {
+	var cancel = confirm(message);
+	if (cancel == true) {
+		window.location = url;
+	}
+}
+function gotoURL(url) {
+	window.location = url;
+}
+
+$(document).ready(function() {
+	// Top menu drop downs
+	$('#bml').mouseenter(function() {
+		$('#listenMenu').show();
+	});
+	$('#bml').mouseleave(function() {
+		$('#listenMenu').hide().delay(1000);;
+	});
+	$('#listenMenu').mouseenter(function() {
+		if ($('#bml').is('.button-menu-listen-hl')) { 
+			$('#bml').toggleClass('button-menu-listen-hover');
+			$('#bml').toggleClass('button-menu-listen-hl');
+			$('#bml').addClass('was-hl');
+		}
+		else {
+			$('#bml').toggleClass('button-menu-listen-hover');
+			$('#bml').toggleClass('button-menu-listen');
+		}
+		$(this).show();
+	});
+	$('#listenMenu').mouseleave(function() {
+		$(this).hide().delay(100);
+		if ($('#bml').is('.was-hl')) { 
+			$('#bml').toggleClass('button-menu-listen-hover', false);
+			$('#bml').toggleClass('button-menu-listen-hl', true);
+		}
+		else {
+			$('#bml').toggleClass('button-menu-listen-hover', false);
+			$('#bml').toggleClass('button-menu-listen', true);
+		}
+
+	});
+
+	$('#bmb').mouseenter(function() {
+		$('#broadcastMenu').show();
+	});
+	$('#bmb').mouseleave(function() {
+		$('#broadcastMenu').hide().delay(1000);;
+	});
+	$('#broadcastMenu').mouseenter(function() {
+		if ($('#bmb').is('.button-menu-broadcast-hl')) { 
+			$('#bmb').toggleClass('button-menu-broadcast-hover');
+			$('#bmb').toggleClass('button-menu-broadcast-hl');
+			$('#bmb').addClass('was-hl');
+		}
+		else {
+			$('#bmb').toggleClass('button-menu-broadcast-hover');
+			$('#bmb').toggleClass('button-menu-broadcast');
+		}
+		$(this).show();
+	});
+	$('#broadcastMenu').mouseleave(function() {
+		$(this).hide().delay(100);
+		if ($('#bmb').is('.was-hl')) { 
+			$('#bmb').toggleClass('button-menu-broadcast-hover', false);
+			$('#bmb').toggleClass('button-menu-broadcast-hl', true);
+		}
+		else {
+			$('#bmb').toggleClass('button-menu-broadcast-hover', false);
+			$('#bmb').toggleClass('button-menu-broadcast', true);
+		}
+	});
+});
+
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+// Creates an adblock detection plugin.
+ga('provide', 'adblockTracker', function(tracker, opts) {
+	var ad = document.createElement('ins');
+	ad.className = 'AdSense';
+	ad.style.display = 'block';
+	ad.style.position = 'absolute';
+	ad.style.top = '-1px';
+	ad.style.height = '1px';
+	document.body.appendChild(ad);
+	tracker.set('dimension' + opts.dimensionIndex, !ad.clientHeight);
+	document.body.removeChild(ad);
+});
+
